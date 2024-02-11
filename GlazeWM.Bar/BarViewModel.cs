@@ -113,6 +113,7 @@ namespace GlazeWM.Bar
         TextFileComponentConfig stc => new TextFileComponentViewModel(this, stc),
         MusicComponentConfig mcc => new MusicComponentViewModel(this, mcc),
         MonocleIndicatorComponentConfig mic => new MonocleIndicatorComponentViewModel(this, mic),
+        InputLanguageComponentConfig ilcc => new InputLanguageComponentViewModel(this, ilcc),
         _ => throw new ArgumentOutOfRangeException(nameof(config)),
       });
     }
