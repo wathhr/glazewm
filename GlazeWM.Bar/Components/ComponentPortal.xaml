@@ -100,6 +100,10 @@
               <components:MusicComponent
                 Padding="{Binding Padding}"
                 Background="{Binding Background}" />
+            <DataTemplate DataType="{x:Type components:MonocleIndicatorComponentViewModel}">
+              <components:MonocleIndicatorComponent
+                Padding="{Binding Padding}"
+                Background="{Binding Background}" />
             </DataTemplate>
           </ContentPresenter.Resources>
         </ContentPresenter>

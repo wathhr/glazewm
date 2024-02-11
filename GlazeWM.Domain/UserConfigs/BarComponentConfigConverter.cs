@@ -101,6 +101,10 @@ namespace GlazeWM.Domain.UserConfigs
           jsonObject.RootElement.ToString(),
           options
         ),
+        "monocle indicator" => JsonSerializer.Deserialize<MonocleIndicatorComponentConfig>(
+          jsonObject.RootElement.ToString(),
+          options
+        ),
         _ => throw new ArgumentException($"Invalid component type '{typeDiscriminator}'."),
       };
     }
