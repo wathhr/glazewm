@@ -30,5 +30,9 @@ namespace GlazeWM.Domain.UserConfigs
     /// Whether to center new floating windows
     /// </summary>
     public bool CenterNewFloatingWindows { get; set; } = true;
+    /// <summary>
+    /// Tiling direction that will be automatically set when focusing a window
+    /// </summary>
+    public AutomaticTilingDirection AutomaticTilingDirection { get; set; } = AutomaticTilingDirection.Unchanged;
   }
 }
