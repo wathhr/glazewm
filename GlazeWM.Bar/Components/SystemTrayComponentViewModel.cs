@@ -54,6 +54,8 @@ namespace GlazeWM.Bar.Components
     {
       _config = config;
 
+      IsExpanded = _config.Expanded;
+
       // Subscribe to collection changes of pinned/unpinned tray icons.
       _shellManager.NotificationArea.UnpinnedIcons.CollectionChanged +=
         (_, _) => OnPropertyChanged(nameof(UnpinnedTrayIcons));
